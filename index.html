@@ -1,42 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Intro component with sign up form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Sign up form</title>
 
-  Learn to code by watching others
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
 
-  See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
-  but understanding how developers think is invaluable. 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="main_wrapper">
+      <div class="description">
+        <h1 class="description_title">
+          Learn to code by
+          <br />
+          watching others
+        </h1>
+        <p class="description_info">
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </div>
 
-  Try it free 7 days then $20/mo. thereafter
+      <div class="form_wrapper">
+        <button class="top_button">
+          <span>Try for 7 day </span> then <br />
+          $20/mo. Thereafter
+        </button>
+        <form novalidate>
+          <input
+            type="text"
+            name="fName"
+            placeholder="First Name"
+            id="firstName"
+            required
+          />
+          <div class="wrong_input wrong_input1">
+            <p>First Name cannot be empty</p>
+          </div>
+          <input
+            type="text"
+            name="Lname"
+            placeholder="Last Name"
+            id="lastName"
+            required
+          />
+          <div class="wrong_input wrong_input2">
+            <p>Last Name cannot be empty</p>
+          </div>
+          <input
+            type="email"
+            name="email"
+            placeholder=" Email Address"
+            id="email"
+            required
+          />
+          <div class="wrong_input wrong_input3">
+            <p>Looks like this is not an email</p>
+          </div>
+          <input
+            type="text"
+            name="password"
+            placeholder="Password"
+            id="password"
+            required
+          />
+          <div class="wrong_input wrong_input4">
+            <p>Password cannot be empty</p>
+          </div>
+          <button class="form_button">Claim your free trial</button>
+          <p class="form_info">
+            By clicking the button, you are agreeing to our
+            <span>Terms and Services</span>
+          </p>
+        </form>
+      </div>
+    </main>
 
-  First Name 
-  Last Name 
-  Email Address
-  Password
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://www.frontendmentor.io/profile/purplehippo911"
+          >FoxyNoxy </a
+        >.
+      </p>
+    </footer>
 
-  Claim your free trial 
-
-  By clicking the button, you are agreeing to our Terms and Services
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
-</body>
+    <script src="app.js"></script>
+  </body>
 </html>
