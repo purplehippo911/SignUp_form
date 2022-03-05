@@ -23,19 +23,20 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   overflow-x: hidden;
   background-color: var(--main-bg);
   color: white;
 }
 
 .main_wrapper {
-  box-sizing: border-box;
   min-width: 375px;
   max-width: 1440px;
+  width: 100%;
+  height: 100%;
   min-height: 50rem;
   display: flex;
   flex-direction: column;
+  padding: 0 1rem;
 }
 
 .description {
@@ -45,17 +46,24 @@ body {
   margin: 2rem;
   margin-bottom: 110px;
   position: relative;
-  text-align: center;
 }
 
 .description_title {
+  white-space: pre-line;
   font-weight: 600;
-  margin-top: 2rem;
+  font-size: 1.5rem;
+  line-height: 2.1rem;
+  margin-top: 5rem;
 }
 
 .description_info {
   padding: 0;
   font-weight: 400;
+}
+
+.form_wrapper {
+  min-width: 40rem;
+  max-width: 60rem;
 }
 
 .top_button {
@@ -79,7 +87,7 @@ body {
 }
 
 form {
-  min-width: 10rem;
+  min-width: 20rem;
   max-width: 30rem;
   min-height: 30rem;
   background-color: white;
@@ -89,7 +97,6 @@ form {
   align-items: center;
   justify-content: space-evenly;
   margin: 2rem 0;
-  margin-left: 30px;
   border-radius: 0.5rem;
   box-shadow: 0px 7px 2px 0px hsla(5, 10%, 0%, 0.2);
 }
@@ -109,21 +116,26 @@ input {
 #firstName.empty {
   background: url(images/icon-error.svg) no-repeat;
   background-position: 95%;
+  border-color: var(--main-bg);
 }
 
 #lastName.empty {
   background: url(images/icon-error.svg) no-repeat;
   background-position: 95%;
+  border-color: var(--main-bg);
 }
 
 #email.empty {
   background: url(images/icon-error.svg) no-repeat;
   background-position: 95%;
+  border-color: var(--main-bg);
+  color: var(--main-bg);
 }
 
 #password.empty {
   background: url(images/icon-error.svg) no-repeat;
   background-position: 95%;
+  border-color: var(--main-bg);
 }
 
 .wrong_input {
@@ -134,6 +146,7 @@ input {
   color: var(--main-bg);
   font-size: 0.7rem;
   opacity: 0;
+  transition: 0.7s;
 }
 
 .wrong_input1.active {
@@ -192,7 +205,6 @@ input {
     background-image: url(images/bg-intro-desktop.png);
     background-repeat: repeat;
     background-size: auto 50rem;
-    background-clip: border-box;
     overflow: hidden;
   }
 

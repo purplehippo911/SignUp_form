@@ -20,25 +20,29 @@ form.addEventListener('submit', (e) => {
         lastName.classList.add('empty');
     }
     // email
-    if(email.value === "" || email.value == null) {
+    if(email.value === "" || email.value == null || !email.validity.valid) {
         div3.classList.add('active');
         email.classList.add('empty');
     }
+   
     // Password
     if(password.value === "" || password.value == null) {
         div4.classList.add('active');
         password.classList.add('empty');
     }
-
-   if(firstName.value && lastName.value && email.value && password.value ===! "" || firstName.value && lastName.value && email.value && password.value !== null) {
+    // take of the classes when all the inputs have some text
+   if(firstName.value && lastName.value && password.value  ===! "" || firstName.value && lastName.value && password.value !== null) {
        div1.classList.remove('active');
        div2.classList.remove('active');
-       div3.classList.remove('active');
        div4.classList.remove('active');
        firstName.classList.remove('empty');
        lastName.classList.remove('empty');
-       email.classList.remove('empty');
        password.classList.remove('empty');
+   }
+   //take the class off if the email is valid
+   if(email.validity.valid) {
+    div3.classList.remove('active');
+    email.classList.remove('empty');
    }
     e.preventDefault();
 });
