@@ -40,12 +40,12 @@ body {
 }
 
 .description {
-  min-width: 20rem;
-  max-width: 25rem;
+  min-width: 10rem;
+  max-width: 20rem;
   height: 10rem;
   margin: 2rem;
   margin-bottom: 110px;
-  position: relative;
+  margin-bottom: 15rem;
 }
 
 .description_title {
@@ -59,25 +59,14 @@ body {
 .description_info {
   padding: 0;
   font-weight: 400;
-}
-
-.form_wrapper {
-  min-width: 40rem;
-  max-width: 64rem;
-  max-height: 69rem;
-  margin-top: 0rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin-bottom: 2rem;
 }
 
 .top_button {
   width: 100%;
-  margin-top: 50px;
-  padding: 20px;
+  padding: 2.8rem;
   background-color: var(--accent);
   color: white;
-  position: relative;
   border: 0;
   border-radius: 5px;
   box-shadow: 4px 7px 4px 4px hsla(5, 10%, 0%, 0.2);
@@ -87,19 +76,17 @@ body {
 .top_button > span {
   font-weight: 600;
   padding: 0 3 rem;
+  font-size: 0.9rem;
 }
 
 form {
-  width: 100%;
-  min-height: 30rem;
   background-color: white;
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
   margin: 2rem 0;
-  margin-top: 3rem;
+  margin-top: 10px;
   border-radius: 0.5rem;
   box-shadow: 0px 7px 2px 0px hsla(5, 10%, 0%, 0.2);
 }
@@ -142,10 +129,11 @@ input {
 .wrong_input {
   display: flex;
   text-align: flex-end;
-  margin-left: 25rem;
+  min-width: 10rem;
   max-width: 20rem;
   color: var(--main-bg);
   font-size: 0.7rem;
+  display: none;
   opacity: 0;
   transition: 0.7s;
 }
@@ -172,6 +160,7 @@ input {
 
 .form_button {
   width: 90%;
+  margin-top: 1rem;
   border: 0;
   border-radius: 5px;
   padding: 15px;
