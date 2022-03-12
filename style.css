@@ -43,7 +43,7 @@ body {
   height: 10rem;
   margin: 2rem;
   margin-bottom: 110px;
-  margin-bottom: 15rem;
+  margin-bottom: 13rem;
   position: relative;
 }
 
@@ -187,9 +187,6 @@ input {
 }
 
 .attribution {
-  position: absolute;
-  top: 650px;
-  left: 200px;
   text-align: center;
 }
 .attribution a {
@@ -255,5 +252,10 @@ input {
   form {
     min-height: 30rem;
     max-height: 35rem;
+  }
+  .attribution {
+    position: absolute;
+    top: 650px;
+    left: 200px;
   }
 }
