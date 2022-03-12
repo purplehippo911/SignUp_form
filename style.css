@@ -40,12 +40,11 @@ body {
 }
 
 .description {
-  min-width: 10rem;
-  max-width: 20rem;
   height: 10rem;
   margin: 2rem;
   margin-bottom: 110px;
   margin-bottom: 15rem;
+  position: relative;
 }
 
 .description_title {
@@ -64,9 +63,9 @@ body {
 
 .top_button {
   width: 100%;
-  padding: 2.8rem;
+  padding: 2rem;
   background-color: var(--accent);
-  color: white;
+  color: var(--GrayBlue);
   border: 0;
   border-radius: 5px;
   box-shadow: 4px 7px 4px 4px hsla(5, 10%, 0%, 0.2);
@@ -77,6 +76,7 @@ body {
   font-weight: 600;
   padding: 0 3 rem;
   font-size: 0.9rem;
+  color: white;
 }
 
 form {
@@ -87,6 +87,7 @@ form {
   justify-content: space-evenly;
   margin: 2rem 0;
   margin-top: 10px;
+  margin-bottom: 4rem;
   border-radius: 0.5rem;
   box-shadow: 0px 7px 2px 0px hsla(5, 10%, 0%, 0.2);
 }
@@ -165,7 +166,7 @@ input {
   border-radius: 5px;
   padding: 15px;
   background-color: var(--green);
-  color: white;
+  color: var(--grayBlue);
   font-weight: 600;
   text-transform: uppercase;
   box-shadow: 0px px 0px 0px hsla(5, 10%, 0%, 0.2);
@@ -185,6 +186,16 @@ input {
   color: var(--main-bg);
 }
 
+.attribution {
+  position: absolute;
+  top: 650px;
+  left: 200px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
 @media screen and (min-width: 720px) {
   body {
     background-image: url(images/bg-intro-desktop.png);
@@ -201,20 +212,18 @@ input {
   }
 
   .description {
-    min-width: 20rem;
-    max-width: 30rem;
     margin: 0;
-    top: -100px;
-    left: -50px;
     padding: 20px;
+    top: -200px;
+  }
+
+  .description_title {
+    font-size: 35px;
   }
 
   .top_button {
-    top: -50px;
-    left: 40px;
-    margin: 30px;
-    min-width: 30rem;
-    max-width: 50rem;
+    margin-bottom: 20px;
+    padding: 25px;
   }
 
   form {
@@ -232,5 +241,19 @@ input {
   .form_button {
     min-width: 80%;
     max-width: 90%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .description {
+    max-width: 40rem;
+  }
+
+  .form_wrapper {
+    margin-left: 5rem;
+  }
+  form {
+    min-height: 30rem;
+    max-height: 35rem;
   }
 }
