@@ -1,4 +1,4 @@
-# Frontend Mentor - Intro component with sign up form solution
+# Intro component with sign up form solution
 
 This is my solution to the [Intro component with sign up form challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
@@ -44,6 +44,7 @@ Mobile Design:
 - Live Site URL: [githubPages](https://your-live-site-url.com/)
 
 ## My process
+First I think I started by adding the elements like the description, form and the footer. Then I went over to CSS and  added some colors, fonts and the font-size to variables in the ":root", and from there I went downwards and added the background-svg to the background, added some widhts only to take write them out later on, and etc. I got quite a lot of help from @JiriKofron's solution, click here to check out his solution ->[acknowledgements](#acknowledgements). And from there I needed to make the form validate the email and check if the input is empty, so I used webdevSimplified's video as an insight to how it works, chech out his video here --> [resources](#useful-resources). And then I removed the widths to make it a bit more responsive and somehow it worked.
 
 ### Built with
 
@@ -54,8 +55,7 @@ Mobile Design:
 - Mobile-first workflow
 
 ### What I learned
-
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I learned how to validate email and how to check if a box in a form is empty with Javascript, and I got a recap on responsive design and on using media queries. And lastly I learned some new html attrributes like "required" and "novalidate.
 
 ```html
 <div class="wrong_input wrong_input4">
@@ -93,7 +93,7 @@ Use this section to recap over some of your major learnings while working throug
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+I think that I should start to learn a bit more about Flexbox, because positioning the elements was one of the most difficult things I had to do throughout this challenge. I also want to learn more about markdown, and how to use it properly. And lastly I should try to do more challenges including JS so that I can train on it and become more comfortable with it.
 
 ### Useful resources
 
@@ -106,6 +106,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ## Acknowledgments
 
-I want to
+I got quite a lot of inspiration from @JiriKofron. Don`t forget to check out their solution aswell.
+- Github - [@JiriKofron](https://github.com/JiriKofron/intro-component-with-signup-form)
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+Thanks for watching my solution and happy coding!🎈🎆🍕
