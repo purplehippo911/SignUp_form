@@ -40,8 +40,8 @@ Mobile Design:
 
 ### Links
 
-- Solution URL: [](https://purplehippo911.github.io/SignUp_form)
-- Live Site URL: [](https://your-live-site-url.com)
+- Solution URL: [](https://purplehippo911.github.io/SignUp_form/)
+- Live Site URL: [githubPages](https://your-live-site-url.com/)
 
 ## My process
 
