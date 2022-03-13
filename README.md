@@ -40,8 +40,8 @@ Mobile Design:
 
 ### Links
 
-- Solution URL: [mySolution](https://purplehippo911.github.io/SignUp_form/)
-- Live Site URL: [githubPages](https://your-live-site-url.com/)
+- Solution URL: [mySolution](https://https://www.frontendmentor.io/solutions/form-validation-6jrI_BWWH)
+- Live Site URL: [githubPages](https://purplehippo911.github.io/SignUp_form/)
 
 ## My process
 First I think I started by adding the elements like the description, form and the footer. Then I went over to CSS and  added some colors, fonts and the font-size to variables in the ":root", and from there I went downwards and added the background-svg to the background, added some widhts only to take write them out later on, and etc. I got quite a lot of help from @JiriKofron's solution, click here to check out his solution ->[acknowledgments](#acknowledgments). And from there I needed to make the form validate the email and check if the input is empty, so I used webdevSimplified's video as an insight to how it works, chech out his video here --> [resources](#useful-resources). And then I removed the widths to make it a bit more responsive and somehow it worked.
